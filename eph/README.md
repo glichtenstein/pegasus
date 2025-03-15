@@ -1,19 +1,19 @@
 # Pegasus Execution Environment
 
-This README outlines the variables and scripts needed to run jobs on Pegasus.
+This README outlines the steps and variables needed to run jobs on Pegasus.
 
-## Environment Variables
+## Environment Setup
 
-Define the following variables to set up the environment:
+Before executing any scripts, connect to the Pegasus host and navigate to the working directory:
 
 ```bash
-ssh "user@pegasus.idsc.miami.edu"
-cd "/projectnb/sccc_hpc/eph/"
+ssh user@pegasus.idsc.miami.edu
+cd /projectnb/sccc_hpc/eph/
 ```
 
 ## Execution Steps
 
-Execute the following scripts in order:
+Run the following scripts in order:
 
 1. **0_interactive_pegasus_job.sh**  
    Starts an interactive Pegasus job on the host.
@@ -22,9 +22,9 @@ Execute the following scripts in order:
    Downloads the processed GEO data.
 
 3. **2_download_GEO_SRA_accessions.sh**  
-   Retrieves the GEO SRA accessions.
+   Retrieves the GEO SRA accession data.
 
 4. **3_download_SRA_fastqs.sh**  
    Downloads the SRA FASTQ files.
 
-Follow the instructions in each script for detailed usage.
+Refer to each script for further instructions.
