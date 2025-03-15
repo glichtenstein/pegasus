@@ -41,3 +41,5 @@ while IFS= read -r accession || [ -n "$accession" ]; do
 done < "$INPUT_FILE"
 
 echo "All GEO to SRA conversions completed."
+# Clean up
+rm -f "$GSE2SRR_SCRIPT"
