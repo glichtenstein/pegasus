@@ -110,6 +110,7 @@ find "$INPUT_DIR" -mindepth 1 -maxdepth 1 -type d | while IFS= read -r gse_dir; 
             --threads 24 --mem 16GB --progress
 
             # Compress FASTQ files with pigz for faster performance
+            echo "🔄 Compressing FASTQ files with pigz..."
             pigz -p 24 "$fastq_outdir"/*.fastq
         fi
     done < "$csv_file"
