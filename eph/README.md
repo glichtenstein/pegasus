@@ -34,7 +34,7 @@ Execute the following commands in sequence:
   ```
 
 - **3_download_SRA_fastqs.sh**  
-  Downloads the SRA FASTQ files.
+  Downloads the SRA raw FASTQ files.
   ```bash
   bash 3_download_SRA_fastqs.sh
   ```
