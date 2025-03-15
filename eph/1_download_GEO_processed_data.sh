@@ -44,10 +44,10 @@ while IFS= read -r accession || [ -n "$accession" ]; do
     ftp_url="$BASE_URL/$range_dir/$accession/"
 
     accession_output_dir="$OUTPUT_DIR/$accession"
-    mkdir -p "$accession_output_dir/supplementary_data"
+    mkdir -p "$accession_output_dir/processed_data"
 
     echo "Downloading data from: $ftp_url"
-    wget -r -np -nH --cut-dirs=5 -P "$accession_output_dir/supplementary_data" "$ftp_url"
+    wget -r -np -nH --cut-dirs=5 -P "$accession_output_dir/processed_data" "$ftp_url"
 
     echo "Download complete for: $accession"
 done < "$INPUT_FILE"
